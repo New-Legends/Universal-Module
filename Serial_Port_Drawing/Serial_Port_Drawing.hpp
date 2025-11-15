@@ -17,8 +17,8 @@ extern "C" {
 
 
 /*  
- * 简介：这是一个最初为了适配vofa+进行串口绘图的模块，按包含类的添加顺序——vofa_float、vofa_fkoat_fast、vofa_array
- * 各项类简介：1.vofa_array: 辅助收集数据的数组、2.vofa_float: 浮点数调试、3.vofa_fast_float: 快速浮点数调试、
+ * 简介：这是一个最初为了适配vofa+进行串口绘图的模块，按包含类的添加顺序——draw_float、draw_array、draw_float_single
+ * 各项类简介：1.draw_array: 辅助收集数据的数组、2.draw_float: 多浮点数调试，将整个数组发送出去、3.draw_float_single: 单浮点数调试
  * 
  * 碎碎念：这个模块还是有些欠缺的，我认为最好的办法是设定基类，基类内部所有函数都是虚函数，然后在继承的子类中实现功能。
  * 做梦：让这个模块可以适配常见的串口调试工具！！！
@@ -88,3 +88,4 @@ class draw_float_single:draw_float// 快速浮点数调试
     public:
         void single_float(UART_HandleTypeDef* huart,float* data_point);// 单浮点数发送
 };
+
