@@ -1,5 +1,5 @@
-#include "vofa_debug.hpp"
-#include "vofa_c_wrapper.h"
+#include "Serial_Port_Drawing.hpp"
+#include "Serial_Port_Drawing_Wrapper.h"
 #include <new>
 
 /* C++包装接口~ */
@@ -136,4 +136,5 @@ extern"C"
 
 
 }
+
 
