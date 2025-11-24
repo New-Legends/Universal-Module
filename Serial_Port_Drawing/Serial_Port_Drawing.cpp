@@ -1,4 +1,4 @@
-#include "Vofa_debug.hpp"
+#include "Serial_Port_Drawing.hpp"
 
 
 /*-------------以下为辅助数据收集模块-------------*/
@@ -207,3 +207,4 @@ void draw_float_single::single_float(UART_HandleTypeDef* huart,float* data_point
     float_send();
     buffer_free();
 }
+
