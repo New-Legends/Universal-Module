@@ -1,5 +1,5 @@
-#ifndef  VOFA_C_WRAPPER_H
-#define  VOFA_C_WRAPPER_H
+#ifndef  Serial_Port_Drawing_WRAPPER_H
+#define  Serial_Port_Drawing_WRAPPER_H
 
 
 /*C语言接口*/
@@ -52,6 +52,7 @@ void single_float(single_float_handle* handle,UART_HandleTypeDef* huart,float* d
 
 
 #endif
+
 
 
 
