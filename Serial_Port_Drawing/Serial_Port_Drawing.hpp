@@ -1,5 +1,5 @@
-#ifndef VOFA_DEBUG_H
-#define VOFA_DEBUG_H
+#ifndef SERIAL_PORT_DRAWING_H
+#define SERIAL_PORT_DRAWING_H
 #endif
 
 #ifdef __cplusplus
@@ -88,4 +88,5 @@ class draw_float_single:draw_float// 快速浮点数调试
     public:
         void single_float(UART_HandleTypeDef* huart,float* data_point);// 单浮点数发送
 };
+
 
